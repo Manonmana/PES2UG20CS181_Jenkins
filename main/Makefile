@@ -1,2 +1,7 @@
-hello_exec: hello.cpp
-	g++ hello.cpp -o hello_exec
+all: hello
+
+hello: hello.cpp
+	g++ hello.cpp -o hello
+
+clean:
+	rm -f hello
